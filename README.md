@@ -16,7 +16,7 @@ Make sure you have the following installed on your machine:
      ```
 
 2. **Navigate to the Project Folder**
-   - Change the directory to your project folder.
+   - Change the directory to project folder.
      ```bash
      cd path/to/kata/project
      ```
