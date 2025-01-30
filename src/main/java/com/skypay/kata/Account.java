@@ -12,6 +12,7 @@ public class Account implements AccountService{
     private List<Transaction> transactions = new ArrayList<>();
     private boolean active = true;
 
+    //to check the account is it active or disabled
     private void accountActivity(){
         if(!active){
             throw new DisabledAccountException();
@@ -69,5 +70,13 @@ public class Account implements AccountService{
 
     public void setTransactions(List<Transaction> transactions) {
         this.transactions = transactions;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 }
