@@ -6,7 +6,7 @@ public class Transaction {
     private int amount;
     private int balance;
     private LocalDate date;// the use of LocalDateTime to be more precise but i will follow the exercise format(dd/mm/yyyy)
-    private String typeOfTransaction; // To be more precise, we can add the type of transaction to specify whether it is a debit or credit.
+    //private Transaction type;  To be more precise, we can add the type of transaction (Enum of WITHDRAW, DEPOSIT, TRANSFER...etc) to specify whether it is a debit or credit.
 
     public Transaction(int amount,int balance) {
         this.amount = amount;
@@ -25,6 +25,14 @@ public class Transaction {
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
     }
 
     public LocalDate getDate() {
